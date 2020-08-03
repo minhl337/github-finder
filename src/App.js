@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './components/layout/Navbar';
 
 import UserItem from './components/users/UserItem';
+import Users from './components/users/Users';
 
 class App extends Component {
   beans = () => 'beans';
@@ -12,7 +13,9 @@ class App extends Component {
     return (
       <>
         <Navbar />
-        <UserItem />
+        <div className='container'>
+          <Users />
+        </div>
       </>
     );
   }
